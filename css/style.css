@@ -1,0 +1,151 @@
+:root{
+    --vermelho:#da2f2f;
+    --preto:#141414;
+}    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+tr {
+    border-bottom: 1px solid yellow;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+   
+    padding: 20px;
+}
+header img {
+    width: 100px;
+    height: 220px;
+}
+
+main {
+    background-image:linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50) 100%), url(../img/img3.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 650px;
+    font-size: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin: auto;
+}
+.tabela {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    padding: 10px;
+}
+.tabela img {
+    background: #ffff;
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 35px;
+}
+.redessociais {
+    padding: 15px;
+}
+footer{
+    display: inline;
+    text-align: center; 
+    font-size: 14px;
+    padding: 15px;  
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media screen and (max-width: 540px ) {
+   header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header img {
+        width: 50px;
+        height: 120px;
+        margin: 20px;  
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 400px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .tabela img {
+        width: 35px;
+        margin-right: 12px;
+    }  
+}
+@media screen and (max-width: 480px ) {
+    header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+     header img {
+         width: 50px;
+         height: 120px;
+         margin: 20px;  
+     }
+     main {
+         display: flex;
+         font-size: 24px;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         width: 85%;
+         height: 400px;
+     }
+     h1 {
+         font-size: 28px;
+     }
+     .tabela img {
+         width: 35px;
+         margin-right: 12px;
+     }  
+ }
+
+@media screen and ( min-width: 978px ){
+    .descricao{
+        width: 50%;
+    }
+    .container-fluid {
+        font-size: 26px;
+    }
+}
