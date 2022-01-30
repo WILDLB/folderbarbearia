@@ -48,9 +48,8 @@ tr {
 td{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     width: 95%;
-    padding: 2px;
     font-size: 24px;
     margin: 0 auto;
 }
@@ -88,7 +87,6 @@ footer{
    width: 100%;
    margin: 0 auto;
  
-  
 }
 footer p{
    display: flex;
@@ -97,13 +95,13 @@ footer p{
    flex-direction: row;
 }
 
-
 .container-fluid p{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;   
+    padding: 10px;  
+    font-size: 22px; 
 }
 .redessociais {
     width: 100%;
@@ -111,8 +109,7 @@ footer p{
     align-items: center;
     justify-content: center;
     padding: 6px;
-    margin-top: 10px;
-   
+    margin-top: 10px;  
 }
 
 @media screen and (max-width: 540px ) {
@@ -178,13 +175,22 @@ footer p{
          margin-right: 12px;
          font-size: 12px;
      }  
-     footer p{
+     .container-fluid p{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
-        font-size: 14px;
-     }
+        padding: 10px;  
+        font-size: 14px; 
+    }
+    td{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 95%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
  }
 
 @media screen and ( min-width: 978px ){
